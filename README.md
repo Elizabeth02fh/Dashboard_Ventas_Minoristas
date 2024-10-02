@@ -11,7 +11,7 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
 
 + Determinar el total de ventas por género.
 
-**Pasos para construir el Dashboard**
+#**Pasos para construir el Dashboard**
 
   + `Paso 1:` comprensión de las fuentes de datos y su contenido.
 
