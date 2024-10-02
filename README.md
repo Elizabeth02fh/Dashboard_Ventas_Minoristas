@@ -49,7 +49,7 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 Se realizaron las siguientes Medidas DAX:
 
-      Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
+      + Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
 
       Total Unidades = SUM( Ventas_Minoristas[Cantidad] )
       
