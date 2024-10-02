@@ -45,7 +45,8 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 
   + `Paso 4:` Creación del modelo de datos.
-    ![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/51afc8637521429398a73888ccb9a34ebe56333c/DASHBOARD%20VENTAS%20MINORISTAS.PNG)
+![MODELO_DATOS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/8dbfc848ccee8cb35c633323b24bcaba7b66d9bf/MODELO_DATOS.PNG)
+    
   + `Paso 5:` Creación de los cálculos necesarios para el reporte.
     
 Se realizaron las siguientes Medidas DAX:
@@ -77,7 +78,8 @@ Se realizaron las siguientes Medidas DAX:
       """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
 
   + `Paso 5:` Diseño y visualización de los datos.
-![MODELO_DATOS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/8dbfc848ccee8cb35c633323b24bcaba7b66d9bf/MODELO_DATOS.PNG)
+![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/51afc8637521429398a73888ccb9a34ebe56333c/DASHBOARD%20VENTAS%20MINORISTAS.PNG)
+
     Interpretación del grafico de TOTAL VENTAS POR MES
     
     *•	Las mayores ventas se otorgaron en el mes de mayo, y las ventas más bajas fueron en el mes de setiembre, y se terminó el año con unas ventas de $43.852 lo que significa un 27.9 % de una variación positiva con respecto al mes de noviembre.*
