@@ -45,4 +45,41 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 
   + `Paso 4:` Creación del modelo de datos.
+  + `Paso 5:` Creación de los cálculos necesarios para el reporte.
+    
+Se realizaron las siguientes Medidas DAX:
+
+      Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
+
+      Total Unidades = SUM( Ventas_Minoristas[Cantidad] )
+      
+      % Var Mensual Ventas = 
+      VAR Ventas_PM = CALCULATE ( [Total Ventas], DATEADD ( Calendario[Fecha], -1, MONTH) ) 
+      VAR Variacion = DIVIDE ( [Total Ventas] - Ventas_PM, Ventas_PM, 0 ) 
+      RETURN
+      IF ( ISBLANK ( Ventas_PM ), 0, Variacion )
+
+      Maximo Eje Y Ventas = 
+      VAR Tabla = ALLSELECTED ( Calendario[Mes Abreviado], Calendario[Nombre del mes] ) 
+      VAR Maximo = MAXX ( Tabla, [Total Ventas] ) 
+      VAR Incremento = 1.5
+      RETURN
+      Maximo * Incremento
+
+      Formato dinámico
+      """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
+
+  + `Paso 5:` Diseño y visualización de los datos.
+
+    Interpretación del grafico de TOTAL VENTAS POR MES
+    
+    *•	Las mayores ventas se otorgaron en el mes de mayo, y las ventas más bajas fueron en el mes de setiembre, y se terminó el año con unas ventas de $43.852 lo que significa un 27.9 % de una variación positiva con respecto al mes de noviembre.*
+    
+**Technological tools:**
+
++ `Power Query:` EDA + transformations + Preprocessing 
++	`Power BI:` database, Entity Relationship Diagram
++	`Dax:` Medidas Dax, calculos
++	`Power BI:` Dashboard
+
 
