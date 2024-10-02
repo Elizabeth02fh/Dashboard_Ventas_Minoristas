@@ -19,7 +19,7 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
 
   + `Paso 3:` Proceso de limpieza a los datos en power query.
 
-      •	Modificación de los nombres de los archivos Excel correspondientes a las ventas de minoristas, transformándolos completamente a letras mayúsculas.
+      	Modificación de los nombres de los archivos Excel correspondientes a las ventas de minoristas, transformándolos completamente a letras mayúsculas.
     
       •	Se aplicó una condición de filtro a las filas de la tabla diciendo que se va a conservar las filas con extensión xslx.
     
