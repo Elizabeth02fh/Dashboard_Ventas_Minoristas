@@ -19,11 +19,11 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
 
   + `Paso 3:` Proceso de limpieza a los datos en power query.
 
-       *• Modificación de los nombres de los archivos Excel correspondientes a las ventas de minoristas, transformándolos completamente a letras mayúsculas.*
+      *• Modificación de los nombres de los archivos Excel correspondientes a las ventas de minoristas, transformándolos completamente a letras mayúsculas.*
     
-      *•	Se aplicó una condición de filtro a las filas de la tabla diciendo que se va a conservar las filas con extensión xslx.*
+      *• Se aplicó una condición de filtro a las filas de la tabla diciendo que se va a conservar las filas con extensión xslx.*
     
-     *•	Se aplicó un filtro para la nomenclatura de aquellos archivos que comiencen con VENTA MINORISTAS, ya que puede haber otro archivo que no necesariamente correspondan a las ventas.*
+      *•	Se aplicó un filtro para la nomenclatura de aquellos archivos que comiencen con VENTA MINORISTAS, ya que puede haber otro archivo que no necesariamente correspondan a las ventas.*
     
       *•	Conservó las filas en el que el nombre no comienza por este carácter (~)*
     
@@ -45,6 +45,7 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 
   + `Paso 4:` Creación del modelo de datos.
+    ![MODELO_DATOS]()
   + `Paso 5:` Creación de los cálculos necesarios para el reporte.
     
 Se realizaron las siguientes Medidas DAX:
