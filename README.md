@@ -78,8 +78,7 @@ Se realizaron las siguientes Medidas DAX:
 **Technological tools:**
 
 + `Power Query:` EDA + transformations + Preprocessing 
-+	`Power BI:` database, Entity Relationship Diagram
 +	`Dax:` Medidas Dax, calculos
-+	`Power BI:` Dashboard
++	`Power BI:` database, Entity Relationship Diagram, Dashboard
 
 
