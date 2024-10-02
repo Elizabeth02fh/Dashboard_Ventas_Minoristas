@@ -78,7 +78,7 @@ Se realizaron las siguientes Medidas DAX:
       """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
 
   + `Paso 5:` Diseño y visualización de los datos.
-![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/51afc8637521429398a73888ccb9a34ebe56333c/DASHBOARD%20VENTAS%20MINORISTAS.PNG)
+![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/96b4e5f12ae1ab8f0f3df35c60db1da5dffa1c9e/DASHBOARD%20VENTAS%20MINORISTAS.PNG)
 
     Interpretación del grafico de TOTAL VENTAS POR MES
     
