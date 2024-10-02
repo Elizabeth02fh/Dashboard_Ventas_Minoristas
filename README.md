@@ -1,9 +1,14 @@
 ## **Contexto del proyecto individual**
 Para este proyecto se ha creado un dashboard de ventas que permita responder las siguientes preguntas realizadas por el cliente:
+
 •	Determinar las ventas (Total venta y cantidad).
+
 •	Determinar el total de ventas por mes y su correspondiente variación porcentual.
+
 •	Determinar el total de ventas por departamento del cliente.
+
 •	Determinar el total de ventas por categoría de producto.
+
 •	Determinar el total de ventas por género.
 
 **Pasos para construir el Dashboard**
