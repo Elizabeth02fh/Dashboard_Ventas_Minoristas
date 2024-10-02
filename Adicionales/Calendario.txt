@@ -1,0 +1,24 @@
+Tabla Calendario
+
+let
+    Origen = Ventas_Minoristas[Fecha Venta],
+    FechaMin = List.Min(Origen),
+    FechaMax = List.Max(Origen),
+    Personalizado1 = {Number.From(FechaMin)..Number.From(FechaMax)},
+    #"Convertida en tabla" = Table.FromList(Personalizado1, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Tipo cambiado" = Table.TransformColumnTypes(#"Convertida en tabla",{{"Column1", type date}}),
+    #"Columnas con nombre cambiado" = Table.RenameColumns(#"Tipo cambiado",{{"Column1", "Fecha"}}),
+    #"Año insertado" = Table.AddColumn(#"Columnas con nombre cambiado", "Año", each Date.Year([Fecha]), Int64.Type),
+    #"Mes insertado" = Table.AddColumn(#"Año insertado", "Mes", each Date.Month([Fecha]), Int64.Type),
+    #"Nombre del mes insertado" = Table.AddColumn(#"Mes insertado", "Nombre del mes", each Date.MonthName([Fecha]), type text),
+    #"Primeros caracteres insertados" = Table.AddColumn(#"Nombre del mes insertado", "Mes Abreviado", each Text.Start([Nombre del mes], 3), type text),
+    #"Trimestre insertado" = Table.AddColumn(#"Primeros caracteres insertados", "Trimestre", each Date.QuarterOfYear([Fecha]), Int64.Type),
+    #"Semana del año insertada" = Table.AddColumn(#"Trimestre insertado", "Semana del año", each Date.WeekOfYear([Fecha]), Int64.Type),
+    #"Semana del mes insertada" = Table.AddColumn(#"Semana del año insertada", "Semana del mes", each Date.WeekOfMonth([Fecha], Day.Monday), Int64.Type),
+    #"Día insertado" = Table.AddColumn(#"Semana del mes insertada", "Día", each Date.Day([Fecha]), Int64.Type),
+    #"Día del año insertado" = Table.AddColumn(#"Día insertado", "Día del año", each Date.DayOfYear([Fecha]), Int64.Type),
+    #"Nombre del día insertado" = Table.AddColumn(#"Día del año insertado", "Nombre del día", each Date.DayOfWeekName([Fecha]), type text),
+    #"Día de la semana insertado" = Table.AddColumn(#"Nombre del día insertado", "Día de la semana", each Date.DayOfWeek([Fecha], Day.Monday)+1, Int64.Type),
+    #"Poner En Mayúsculas Cada Palabra" = Table.TransformColumns(#"Día de la semana insertado",{{"Nombre del mes", Text.Proper, type text}, {"Nombre del día", Text.Proper, type text}, {"Mes Abreviado", Text.Proper, type text}})
+in
+    #"Poner En Mayúsculas Cada Palabra"
