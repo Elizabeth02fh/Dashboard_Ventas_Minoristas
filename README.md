@@ -49,15 +49,20 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 Se realizaron las siguientes Medidas DAX:
 
-      + Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
+     Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
+*
 
       Total Unidades = SUM( Ventas_Minoristas[Cantidad] )
-      
+
+
+*
+
       % Var Mensual Ventas = 
       VAR Ventas_PM = CALCULATE ( [Total Ventas], DATEADD ( Calendario[Fecha], -1, MONTH) ) 
       VAR Variacion = DIVIDE ( [Total Ventas] - Ventas_PM, Ventas_PM, 0 ) 
       RETURN
       IF ( ISBLANK ( Ventas_PM ), 0, Variacion )
+*
 
       Maximo Eje Y Ventas = 
       VAR Tabla = ALLSELECTED ( Calendario[Mes Abreviado], Calendario[Nombre del mes] ) 
@@ -65,6 +70,7 @@ Se realizaron las siguientes Medidas DAX:
       VAR Incremento = 1.5
       RETURN
       Maximo * Incremento
+*
 
       Formato dinámico
       """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
