@@ -45,7 +45,8 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
     
 
   + `Paso 4:` Creación del modelo de datos.
-<img src="https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/8dbfc848ccee8cb35c633323b24bcaba7b66d9bf/MODELO_DATOS.PNG" alt="MODELO_DATOS" width="700">    
+<img src="https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/8dbfc848ccee8cb35c633323b24bcaba7b66d9bf/MODELO_DATOS.PNG" alt="MODELO_DATOS" width="700">
+
   + `Paso 5:` Creación de los cálculos necesarios para el reporte.
     
 Se realizaron las siguientes Medidas DAX:
