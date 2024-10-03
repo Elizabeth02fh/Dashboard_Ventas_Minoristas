@@ -50,9 +50,10 @@ Para este proyecto se ha creado un dashboard de ventas que permita responder las
   + `Paso 5:` Creación de los cálculos necesarios para el reporte.
     
 Se realizaron las siguientes Medidas DAX:
+SUMX ( <table>, <expression> )
 
      Total Ventas = SUMX( Ventas_Minoristas, Ventas_Minoristas[Precio Unitario]*Ventas_Minoristas[Cantidad])
-*
+SUM ( <column> )
 
       Total Unidades = SUM( Ventas_Minoristas[Cantidad] )
 
