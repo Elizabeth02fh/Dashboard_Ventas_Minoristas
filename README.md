@@ -84,9 +84,9 @@ SUM ( column )
 
 <img src="https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/96b4e5f12ae1ab8f0f3df35c60db1da5dffa1c9e/DASHBOARD%20VENTAS%20MINORISTAS.PNG" alt="DASHBOARD VENTAS MINORISTAS" width="1200">
 
+  *•	Para el año 2022, Las mayores ventas se otorgaron en el mes de mayo, y las ventas más bajas fueron en el mes de setiembre, y se terminó el año con unas ventas de $43.852 lo que significa un 27.9 % de una variación positiva con respecto al mes de noviembre.*
+  
 ![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/6392ccce2ff6423bcf19f791330b156b9b344647/Dahsboard2023.PNG)
-
-  *•	Las mayores ventas se otorgaron en el mes de mayo, y las ventas más bajas fueron en el mes de setiembre, y se terminó el año con unas ventas de $43.852 lo que significa un 27.9 % de una variación positiva con respecto al mes de noviembre.*
     
 **Technological tools:**
 
