@@ -86,8 +86,6 @@ SUM ( column )
 
 ![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/6392ccce2ff6423bcf19f791330b156b9b344647/Dahsboard2023.PNG)
 
-    Interpretación del grafico de TOTAL VENTAS POR MES
-    
   *•	Las mayores ventas se otorgaron en el mes de mayo, y las ventas más bajas fueron en el mes de setiembre, y se terminó el año con unas ventas de $43.852 lo que significa un 27.9 % de una variación positiva con respecto al mes de noviembre.*
     
 **Technological tools:**
