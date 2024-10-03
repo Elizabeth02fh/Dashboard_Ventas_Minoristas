@@ -81,7 +81,8 @@ SUM ( column )
       """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
 
   + `Paso 5:` Diseño y visualización de los datos.
-![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/96b4e5f12ae1ab8f0f3df35c60db1da5dffa1c9e/DASHBOARD%20VENTAS%20MINORISTAS.PNG)
+
+<img src="https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/96b4e5f12ae1ab8f0f3df35c60db1da5dffa1c9e/DASHBOARD%20VENTAS%20MINORISTAS.PNG" alt="DASHBOARD VENTAS MINORISTAS" width="900">
 
 ![DASHBOARD VENTAS MINORISTAS](https://github.com/Elizabeth02fh/Dashboard_Ventas_Minoristas/blob/6392ccce2ff6423bcf19f791330b156b9b344647/Dahsboard2023.PNG)
 
