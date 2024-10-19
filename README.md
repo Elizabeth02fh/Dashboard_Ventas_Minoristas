@@ -60,14 +60,17 @@ SUM ( column )
       Total Unidades = SUM( Ventas_Minoristas[Cantidad] )
 
 
-*
+CALCULATE(<expression>, <filter1>, <filter2>, ...)
+DIVIDE(<numerator>, <denominator>, [<alternateResult>])
 
       % Var Mensual Ventas = 
       VAR Ventas_PM = CALCULATE ( [Total Ventas], DATEADD ( Calendario[Fecha], -1, MONTH) ) 
       VAR Variacion = DIVIDE ( [Total Ventas] - Ventas_PM, Ventas_PM, 0 ) 
       RETURN
       IF ( ISBLANK ( Ventas_PM ), 0, Variacion )
-*
+      
+ALLSELECTED([<tableOrColumn>])
+MAXX(<table>, <expression>)
 
       Maximo Eje Y Ventas = 
       VAR Tabla = ALLSELECTED ( Calendario[Mes Abreviado], Calendario[Nombre del mes] ) 
@@ -75,7 +78,8 @@ SUM ( column )
       VAR Incremento = 1.5
       RETURN
       Maximo * Incremento
-*
+
+  FORMAT(<value>, <format_string>)
 
       Formato dinámico
       """"&FORMAT ([% Var Mensual Ventas], "+0.0%; -0.0%;0.0%")&""""
